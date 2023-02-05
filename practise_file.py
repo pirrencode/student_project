@@ -8,21 +8,21 @@ df = pd.DataFrame()
 print(df)
 
 # Load an excel dataset(games_details)
-df = pd.read_csv("C:/Users/Bin Zheng/Desktop/py/ranking.csv",encoding="utf-8")
+df_new = pd.read_csv("C:/Users/Bin Zheng/Desktop/py/ranking.csv",encoding="utf-8")
 
 # print the dataframe again.
-print(df)
+print(df_new)
 
-print(df.head(5))
+print(df_new.head(5))
 
-print(df[:3])
+print(df_new[:3])
 
-df = df[:3]
+df_subset = df_new[:3]
 
-team = df.TEAM
+team = df_subset.TEAM
 print(team)
 
-win = df.W
+win = df_subset.W
 print(win)
 
 import matplotlib.pyplot as plt
